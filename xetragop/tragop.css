@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color-1: #5CE1E6 ;
+    --primary-color-2: #BE4222 ;
+    --whilte-color: #fff;
+    --text-color: #00000;
+    --background-color: #D9D9D9;
+}
+html {
+    font-family: 'Baloo 2', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.grid_full-width {
+    width:100%;
+}
+.grid_row {
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.col-8{
+    width: 12.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#header{
+     box-shadow: 0 4px 6px gray;
+     width: 100vw;
+     height:100px ;
+     overflow: hidden;
+}
+.container{
+
+}
+.header_logo{
+
+}
+.logo_link{
+
+}
+.logo_img{
+   width: 90px;
+   margin: 3px 0 0 50px;
+}
+.nav{
+   line-height: 100px;
+    margin-left: 30px;
+}
+.nav_list{
+  display: flex;
+ line-height: 100px;
+
+}
+.nav_list-item{
+   list-style: none;
+   padding: 0 25px;
+}
+.nav_list-item:hover .nav_list-item--link{
+    color: var(--primary-color-1);
+    transition: 0.2s ease-out;
+}
+.nav_list-item--link{
+   text-decoration: none;
+   font-size: 20px;
+   color: var(--text-color);
+   font-weight: 900;
+}
+.nav_list-item--icon{
+     padding: 0 10px;
+}
+.select{
+    position: relative;
+    height: 697px;
+    width: 100%;
+}
+.banner{
+    position: absolute;
+    height: 100%; 
+    min-width: 100%;
+    background-image: url(https://autopro8.mediacdn.vn/2017/dsc0831-1514698231184.jpg);
+    background-size: cover;
+    background-size: 100% 100%; 
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 30, 30, 0.642);
+    background-size: 100% 100%;
+    align-items: center;
+}
+
+.banner-text{
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none ;
+    top: 40%;
+    animation: les ease-in-out 1.6s infinite;
+}
+
+@keyframes les{
+    0%{
+        color: white;
+    }
+    50% {
+        color: aqua;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+.content{
+    position: relative;
+    height: 100px;
+    width: 1300px;
+    top: 746px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 10px;
+
+}
+
+.content-left {
+    position: absolute;
+    padding: 50px;
+    width: 700px;
+
+}
+
+.borrow-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.borrow-text{
+    font-size: 1.3rem;
+}
+
+.content-right{
+    position: absolute;
+    height: 430px;
+    width: 450px;
+    right: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.contract-input{
+    height: 40px;
+    margin: 20px 0;
+    border-radius: 20px;
+    padding: 0 10px;
+
+}
+
+.content2{
+    position: relative;
+    top: 590px;
+    height: 100px;
+    width: 800px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;   
+    right: 60px;
+}
+
+.content2-menu{
+    padding: 20px 0;
+    height: 400px;
+    min-width: 500px;
+    margin: 0 100px;
+    background-color: rgba(247,247,247,0.46);
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+.content2-menu:hover{
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition: transform ease-in-out .4s ;
+}
+
+.menu-title{
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #4054b2;
+}
+
+.menu-icon{
+    color: #4054b2;
+    font-size: 3rem;
+}
+
+.menu-list{
+    padding: 0 20px;
+}
+
+.menu-item{
+    position: relative;
+    left: 0;
+    padding: 2px 40px;
+    font-size: 1.2rem;
+    
+}
+
+.contract-button{
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+.contract-button:hover{
+    color: black;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+#footer{
+    height: 600px;
+    background-image: url("https://photo-mekongasean.epicdn.me/w950/Uploaded/2023/aolthuo/2022_05_14/x2-2670.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    top: 1600px;
+}
+
+
+#footer2{
+    /* margin-top: 0px; */
+}
+
+#footer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.footer_title{
+   font-size: 70px;
+   font-weight: 900;
+   text-shadow: 0 0 5px #fff;
+   color: var(--primary-color-1);
+   padding-top: 50px;
+}
+.footer_content{
+  margin-top: 80px;
+  float: left;
+}
+.content_1{
+    width: 33.3333%;
+}
+.content_2{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_3{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_title{
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.content_text-list{
+   
+}
+.content_text-list_item{
+   display: flex;
+   align-items: center;
+   list-style: none;
+   padding: 10px 0;
+   
+}
+.fa-solid{
+
+}
+.fa-location-dot{
+
+}
+.text-list_item--icon{
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+} 
+
+.text-list_item--link{
+    font-size: 20px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    line-height: 25px;
+    margin-left: 15px;
+}
+.fa-phone{
+
+}
+.store_list-button{
+   width: 100%;
+   background-color: #fff;
+   text-align: center;
+   border-radius: 5px;
+   padding: 10px 0;
+   margin-top: 10px;
+   transition: all 0.2s ease-out;
+}
+.store_list-button:hover{
+   background-color: #5CE1E6;
+   transition: all 0.2s ease-in;
+   cursor: pointer;
+}
+.store_list-button:hover .store_list-button-link{
+  color: #ffff;
+  font-size: 19px;
+  transition: all 0.2s ease-in;
+}
+.store_list-button-link{
+   text-decoration: none;
+   color: var(--text-color);
+   font-weight: 900;
+   font-size: 20px;
+   transition: all 0.2s ease-out;
+} 
+.fa-envelope{
+
+}
+.social-contact{
+  width: 100%;
+  margin-top: 30px;
+}
+.social-contact_list{
+   display: flex;
+   justify-content: space-around;
+}
+.social-contact_list-item{
+     list-style: none;
+     transition: all 0.2s ease-out;
+    
+}
+.social-contact_list-item:hover{
+   transform: translateY(-10px);
+   transition: all 0.2s ease-in;
+}
+.social-contact_list-item--link{
+   font-size: 40px;
+   color: #ffff;
+}
+.social-contact_list-item--link:hover{
+  
+}
+
+
+.social-contact_list-item--icon{
+
+}
+.fa-brands{
+
+}
+.fa-facebook{
+
+}
+.fa-tiktok{
+
+}
+.fa-youtube{
+
+}
+.fa-instagram{
+
+}
+.content_title{
+
+}
+.content_text{ 
+    font-size: 25px;
+    color: rgba(255,255,255,0.7);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.info_register{
+  width: 100%; 
+  position: relative;
+  top: 30px;
+}
+.info_register-input{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 10px;
+  outline: none;
+
+}
+.info_register-btn{
+   width: 100px;
+   height: 34px;
+   font-size: 16px;
+   font-weight: 900;
+   font-family: var(--text-font);
+   color: #ffff;
+   background-color: black;
+   position: absolute;
+   right: 5px;
+   top: 4px;
+   cursor: pointer;
+   box-shadow: inset 0 0 0 0 var(--primary-color-1);
+   transition: all 0.2s ease-out;
+
+}
+.info_register-btn:hover{
+    box-shadow: inset 100px 0 0 0 var(--primary-color-1);
+    transition: all 0.2s ease-in;
+}
+
+.background{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #1e3094, #95577e, #fa8e44);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.header-with-search {
+    height: var(--search-height);
+    display: flex;
+    align-items:center;
+    margin: 0 8px;
+}
+.header__logo {
+    width:300px;
+
+}
+.header__logo-img {
+    width: 150px;
+    margin-left: 110px;
+    position: relative;
+}
+
+.header__logo-img__picture{
+    width: 111px;
+    height: 80px;
+    position: relative;
+    right: -40px;
+}
+
+.heder__logo-img-car{
+    height: 150px;
+    width: 150px;
+    position:absolute;
+    top: -10px;
+    left: 200px;
+}
