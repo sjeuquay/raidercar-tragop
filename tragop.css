@@ -171,25 +171,39 @@ body{
     height: 40px;
     margin: 20px 0;
     border-radius: 20px;
-    padding: 0 10px;
-
+    padding: 0 10px; 
 }
 
 .content2{
     position: relative;
-    top: 590px;
+    top: 0px;
     height: 100px;
     width: 800px;
     margin: 0 100px;
+    padding-left: 20px ;
     display: flex;
-    justify-content: space-between;   
-    right: 60px;
+    right: 90px;
+    /* justify-content: space-between;    */
+    /* right: 60px; */
+}
+
+.content2-main{
+    position: relative;
+    display: flex;
+    top: 1150px;
+    height: 500px;
+    width: 1560px;
+    left: -50px;
+    background-color: rgba(226,226,226,0.52);
+    justify-content: space-evenly;
 }
 
 .content2-menu{
+    position: relative;
+    top: 30px;
     padding: 20px 0;
-    height: 400px;
-    min-width: 500px;
+    height: 450px;
+    width: 500px;
     margin: 0 100px;
     background-color: rgba(247,247,247,0.46);
     align-items: center;
@@ -202,6 +216,7 @@ body{
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.5);
     transform: scale(1.1);
     transition: transform ease-in-out .4s ;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
 }
 
 .menu-title{
@@ -216,15 +231,14 @@ body{
 }
 
 .menu-list{
-    padding: 0 20px;
+    padding: 0 100px;
 }
 
 .menu-item{
     position: relative;
-    left: 0;
-    padding: 2px 40px;
+    padding: 2px 2px;
     font-size: 1.2rem;
-    
+    text-align: left;
 }
 
 .contract-button{
@@ -246,6 +260,55 @@ body{
     border: 2px solid black;
 }
 
+.content3{
+    position: relative;
+    top: 1600px;
+    display: flex;
+    width: 1200px;
+    left: -40px;
+    height: 1100px;
+}
+
+.content3-main{
+    position: relative;
+    display: flex;
+    width: 1600px;
+    padding: 0 100px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.content3-menu{
+    border: 1px solid black;
+    width: 500px;
+    padding: 0 40px;
+}
+
+.content3-list-min{
+    
+}
+
+.content3-text-min{
+    position: relative;
+    padding: 8px 0;
+    left: 15px;
+}
+
+.content3-litle{
+    font-size: 1.3rem;
+    color: red;
+}
+
+.content3-list{
+    padding-left: 0px;
+}
+
+.content3-text{
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
 #footer{
     height: 600px;
     background-image: url("https://photo-mekongasean.epicdn.me/w950/Uploaded/2023/aolthuo/2022_05_14/x2-2670.jpg");
@@ -253,7 +316,7 @@ body{
     background-size: cover;
     position: relative;
     z-index: 0;
-    top: 1600px;
+    top: 1000px;
 }
 
 
