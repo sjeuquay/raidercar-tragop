@@ -252,12 +252,16 @@ body{
     text-decoration: none;
     color: #fff;
     font-weight: 800;
+    font-size: 1.2rem;
 }
 
 .contract-button:hover{
     color: black;
     background-color: aqua;
     border: 2px solid black;
+    font-size: 1.3rem;
+    transform: scale(1.1);
+    font-weight: 900;
 }
 
 .content3{
